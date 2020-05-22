@@ -1,12 +1,86 @@
 body {
   margin: 0;
-  background: rgb(30, 30, 30);
+  background: white;
   font-family: 'Space Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.main {
+  padding: 30px;
+  height: 100vh;
+}
+.contenido {
+  display: flex;
+  justify-content: space-between;
+}
+.contenido .description {
+  padding: 10px;
+  width: 60%;
+}
+.main .image{
+  width: 200px;
+  height:300px;
+ 
+}
+.image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 5px;
+}
+  .list {
+  display: flex;
+  padding: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+ 
+}
+.list li {
+  list-style: none;
+  text-align: center;
+  padding-right: 100px;
+ width: 15%;
+}
+.list li a{
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid gray;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+@media screen and (min-width:480px) and (max-width:767px) {
+  
+  .title, .subtitle {
+    text-align: center;
+  }
+
+  .contenido {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .list {
+    justify-content: space-between;
+    margin: 0;
+  }
+  .list li {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  
+  .description {
+    display: block;
+  }
+  
 }
