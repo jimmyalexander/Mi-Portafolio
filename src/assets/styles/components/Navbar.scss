@@ -1,0 +1,41 @@
+.container__navbar{
+    padding: 0 20px 0 20px;
+    a{
+        color: white;
+        text-decoration: wheat;
+
+    }
+}
+.burguer{
+   position: relative;
+   top: -60px;
+   left: 500px;
+}
+.container__icon{
+    padding: 10px;
+    strong{
+        color: lighten($color: #44ffff, $amount: 1);
+    }
+}
+.navbar__list{
+    position: relative;
+    top: -40px;
+    display: none;
+    background-color:transparentize($color:  #44ffff, $amount: 0);
+    flex-direction: column;
+    align-items: center;
+    a{
+        text-align: center;
+        width: 50%;
+        color:#000022;
+        height: 20px;
+        padding: 10px;
+    }
+    a:hover{
+        border-bottom: 2px solid #000022;
+    }
+    
+}
+.is-active{
+    display: flex;
+}
