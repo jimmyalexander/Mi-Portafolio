@@ -1,5 +1,6 @@
 import React from 'react'
-import { mdiTwitter, mdiGithub, mdiLinkedin, mdiReact, mdiLanguageJavascript, mdiLanguageCss3, mdiLanguageHtml5, mdiBootstrap, mdiSass } from '@mdi/js';
+import { mdiTwitter, mdiGithub, mdiLinkedin, mdiReact, mdiLanguageJavascript, mdiLanguageCss3, mdiLanguageHtml5, mdiBootstrap, 
+  mdiFormatLineWeight, mdiWindowClose, mdiWhiteBalanceSunny, mdiMoonWaxingCrescent, mdiSass } from '@mdi/js';
 
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
@@ -7,10 +8,32 @@ import logo from '../assets/static/me.jpg';
 import Icon from '../components/Iconos';
 
 import '../assets/styles/App.scss'
-function App() {
+class App extends React.Component {
+  state = {
+    active: false,
+      cambio: false,
+      iconoBurguer: `${mdiWindowClose}`,
+      iconoSun: `${mdiMoonWaxingCrescent}`
+  }
+  handleClicked = (e) =>{
+    e.preventDefault();
+         this.setState({
+           cambio: !this.state.cambio
+         })
+        document.body.classList.toggle('light');
+  }
+  handleClick = (e) =>{
+    e.preventDefault();
+         this.setState({
+           active: !this.state.active
+         })
+         console.log('hey');
+  }
+  
+  render(){
   return (
-    <div>
-      <Navbar />
+    <div className=''>
+      <Navbar clickSun={this.handleClicked}   clickBurguer={this.handleClick} data={this.state} />
 
       <section className='main'>
         <figure className='container__img'>
@@ -24,8 +47,8 @@ function App() {
 
         <ul className='list'>
           <li className='list__item'>
-            <Icon icon={mdiTwitter} color='#fff' />
-            <a target='blank' href='https://twitter.com/jkastiblanco' className='list__item-link'>
+            <Icon icon={mdiTwitter}  />
+            <a target='blank'  href='https://twitter.com/jkastiblanco'>
               Twitter
             </a>
           </li>
@@ -34,7 +57,7 @@ function App() {
             <a target='blank' href='https://github.com/jimmyalexander'>Github</a>
           </li>
           <li>
-            <Icon icon={mdiLinkedin} color='#fff' />
+            <Icon icon={mdiLinkedin}  />
             <a target='blank' href='https://www.linkedin.com/in/jimmy-alexander-castiblanco-bustos-6a32191aa/'>Linkedin</a>
           </li>
         </ul>
@@ -71,6 +94,7 @@ function App() {
       <Footer />
     </div>
   )
+}
 }
 
 export default App

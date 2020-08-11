@@ -1,6 +1,6 @@
 .main{
     strong{
-        color: lighten($color: #44ffff, $amount: 1);
+        color: lighten($color: $color-light, $amount: 1);
     }
     .container__img {
         text-align: center;
@@ -24,20 +24,20 @@
     }
     a{
         text-decoration: none;
-        color: #44ffff;
+        color: $color-light;
         border-bottom: 2px solid white;
     }
     a:hover{
         color: white;
         font-size: 20px;
-        border-bottom: 2px solid #44ffff;
+        border-bottom: 2px solid $color-light;
     }
 }
 
 .sobre__mi{
     padding: 20px 20px 10px 20px;
     h2{
-        color: #44ffff;
+        color: $color-light;
         padding: 10px;
         border-bottom: 1px solid white;
     }
@@ -50,5 +50,8 @@
 .container__habilidades{
     display: flex;
     justify-content: space-evenly;
-    
+    .iconos:hover{
+        width: 50px;
+        height: 50px;
+    }
 }

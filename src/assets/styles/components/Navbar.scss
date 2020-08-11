@@ -8,20 +8,26 @@
 }
 .burguer{
    position: relative;
-   top: -60px;
-   left: 300px;
+   top: -90px;
+   left: 90%;
+}
+.sun{
+    position: relative;
+    top: -60px;
+    left: 80%;
 }
 .container__icon{
     padding: 10px;
     strong{
-        color: lighten($color: #44ffff, $amount: 1);
+        color: lighten($color: $color-light, $amount: 1);
     }
 }
 .navbar__list{
+    padding: 0;
     position: relative;
     top: -40px;
     display: none;
-    background-color:transparentize($color:  #44ffff, $amount: 0);
+    background-color:transparentize($color:  $color-light, $amount: 0);
     flex-direction: column;
     align-items: center;
     a{

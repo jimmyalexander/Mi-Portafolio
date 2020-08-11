@@ -1,25 +1,21 @@
 import React from 'react'
-import { mdiFormatLineWeight } from '@mdi/js'
+import { mdiFormatLineWeight, mdiWindowClose, mdiWhiteBalanceSunny, mdiMoonWaxingCrescent} from '@mdi/js'
 import Icon from './Iconos'
 
 class Navbar extends React.Component{
-state = {
-  active: false,
-}
-handleClick = (e) =>{
-  this.setState({
-    active: !this.state.active
-  })
-  console.log(this.state)
-}
-render(){
-  return(
+ 
+  
+  render(){
+    return(
     <div className='container__navbar'>
-       <h2 className='container__icon'><a href='#'>Jimmy<strong>Alexander</strong></a></h2>
-       <div > 
-         <Icon onClick={this.handleClick} className='burguer' color='#44ffff' icon={mdiFormatLineWeight}  />
+       <h2 className='container__icon'><a href='#'><span>Jimmy</span><strong>Alexander</strong></a></h2>
+       <div>
+        <Icon onClick={this.props.clickSun} className='sun' icon={this.props.data.cambio === false ? `${mdiWhiteBalanceSunny }` : `${this.props.data.iconoSun}`} />
        </div>
-      <ul  className={`navbar__list ${this.state.active ?'is-active':' '}`}>
+       <div > 
+         <Icon onClick={this.props.clickBurguer} className={`burguer`}  icon={this.props.data.active === false ? `${mdiFormatLineWeight}` : `${this.props.data.iconoBurguer}`}  />
+       </div>
+      <ul  className={`navbar__list ${this.props.data.active ?'is-active':' '}`}>
         <a href='#'>Home</a>
         <a href='#'>SobreMi</a>
         <a href='#'>Certificados</a>
