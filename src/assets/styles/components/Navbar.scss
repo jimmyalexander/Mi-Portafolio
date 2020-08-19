@@ -45,3 +45,24 @@
 .is-active{
     display: flex;
 }
+
+@media screen and (min-width: 900px){
+    .sun{
+        
+    }
+   .burguer{
+       display: none;
+   }
+   .container__navbar{
+      
+       .container__icon{
+           margin: 0;
+       }
+   }
+   .navbar__list{
+       display: flex;
+       flex-direction: row;
+       margin: 0;
+   }
+  
+}

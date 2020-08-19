@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background: $background-dark;
@@ -23,6 +25,9 @@ body {
       h2{
         border-bottom: 2px solid black;
       }
+    }
+    .proyecto_item-titulo{
+      color: white;
     }
   }
   

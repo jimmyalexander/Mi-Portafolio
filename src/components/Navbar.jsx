@@ -16,10 +16,10 @@ class Navbar extends React.Component{
          <Icon onClick={this.props.clickBurguer} className={`burguer`}  icon={this.props.data.active === false ? `${mdiFormatLineWeight}` : `${this.props.data.iconoBurguer}`}  />
        </div>
       <ul  className={`navbar__list ${this.props.data.active ?'is-active':' '}`}>
-        <a href='#'>Home</a>
-        <a href='#'>SobreMi</a>
+        <a href='#home'>Home</a>
+        <a href='#sobre-mi' >SobreMi</a>
         <a href='#'>Certificados</a>
-        <a  href='#'>Proyectos</a>
+        <a  href='#proyectos'>Proyectos</a>
       </ul>
     </div>
   )

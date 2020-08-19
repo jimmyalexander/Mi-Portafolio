@@ -27,13 +27,12 @@ class App extends React.Component {
          this.setState({
            active: !this.state.active
          })
-         console.log('hey');
   }
   
   render(){
   return (
-    <div className=''>
-      <Navbar clickSun={this.handleClicked}   clickBurguer={this.handleClick} data={this.state} />
+    <div className='' id='home'>
+      <Navbar enlace={'sobre_mi'} clickSun={this.handleClicked}   clickBurguer={this.handleClick} data={this.state} />
 
       <section className='main'>
         <figure className='container__img'>
@@ -64,7 +63,7 @@ class App extends React.Component {
         </div>
     </section>
     
-    <section className='sobre__mi' >
+    <section id='sobre-mi' className='sobre__mi' >
       <h2>Sobre mi</h2>
       <h3>Frontend Developer</h3>
       <p className='description'>
@@ -87,8 +86,38 @@ class App extends React.Component {
       </div>
     </section>
 
-    <section className='proyectos'>
-
+    <section className='proyectos' id='proyectos'>
+    <h2>Proyectos</h2>
+      <div className='proyectos_container'>
+        <div className='proyectos_item'>
+          <img src='https://www.bawaggroup.com/linkableblob/BAWAGGROUP/422758/c1c62e0fc0517a8c5473145472ac3795/easybank-teaser-thumbnail.png' />
+          <div className='proyectos_item-info'>
+            <p className='proyecto_item-titulo'>EASYBANK</p>
+            <a href='' >IR A EASYBANK</a>
+          </div>
+        </div>
+        <div className='proyectos_item'>
+          <img src='https://cdn.dribbble.com/users/1099065/screenshots/11013914/instagramstoryad_2x.jpg' />
+          <div className='proyectos_item-info'>
+            <p className='proyecto_item-titulo'>CLON DRIBBLE</p>
+            <a href='' >IR CLON DE DRIBBLE</a>
+          </div>
+        </div>
+        <div className='proyectos_item'>
+          <img src='https://www.lurebogota.com/wp-content/uploads/2018/07/Massima-1-of-1-49.jpg' />
+          <div className='proyectos_item-info'>
+            <p className='proyecto_item-titulo'>PIZZABORES</p>
+            <a href='' >IR A PIZZABORES</a>
+          </div>
+        </div>
+        <div className='proyectos_item'>
+          <img src='https://i.pinimg.com/originals/18/da/63/18da637b683dbdadb84434b487e4942f.jpg' />
+          <div className='proyectos_item-info'>
+            <p className='proyecto_item-titulo'>DISFRUTAS</p>
+            <a href='' >IR A DISFRUTAS</a>
+          </div>
+        </div>
+      </div>
     </section>
 
       <Footer />
