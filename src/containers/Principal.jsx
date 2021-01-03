@@ -6,6 +6,8 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import logo from '../assets/static/me.jpg';
 import Icon from '../components/Iconos';
+import logo_rick from '../assets/static/RandM.png'
+
 
 import '../assets/styles/App.scss'
 class App extends React.Component {
@@ -95,17 +97,17 @@ class App extends React.Component {
     <h2>Proyectos</h2>
       <div className='proyectos_container'>
         <div className='proyectos_item'>
-          <img src='https://www.bawaggroup.com/linkableblob/BAWAGGROUP/422758/c1c62e0fc0517a8c5473145472ac3795/easybank-teaser-thumbnail.png' />
+          <img src={logo_rick} />
           <div className='proyectos_item-info'>
-            <p className='proyecto_item-titulo'>EASYBANK</p>
-            <a href='' >IR A EASYBANK</a>
+            <p className='proyecto_item-titulo'>RICK AND MORTY</p>
+            <a href='https://jimmyalexander.github.io/RickandMorty/' >IR A RICK </a>
           </div>
         </div>
         <div className='proyectos_item'>
           <img src='https://cdn.dribbble.com/users/1099065/screenshots/11013914/instagramstoryad_2x.jpg' />
           <div className='proyectos_item-info'>
             <p className='proyecto_item-titulo'>CLON DRIBBLE</p>
-            <a href='' >IR CLON DE DRIBBLE</a>
+            <a href='' >IR A DRIBBLE</a>
           </div>
         </div>
         <div className='proyectos_item'>
