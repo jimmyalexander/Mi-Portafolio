@@ -5,9 +5,7 @@ import Principal from './containers/Principal'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Principal />
-  </React.StrictMode>,
+    <Principal />,
   document.getElementById('root')
 );
 

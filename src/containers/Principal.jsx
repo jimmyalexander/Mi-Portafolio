@@ -3,13 +3,14 @@ import { mdiTwitter, mdiGithub, mdiLinkedin, mdiReact, mdiLanguageJavascript, md
    mdiWindowClose,mdiMoonWaxingCrescent, mdiSass } from '@mdi/js';
 
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+
 import logo from '../assets/static/me.jpg';
 import Icon from '../components/Iconos';
 import logo_rick from '../assets/static/RandM.png'
 
 
 import '../assets/styles/App.scss'
+import { Navbar } from '../components/Navbar';
 class App extends React.Component {
   constructor(props){
     super(props);
@@ -43,7 +44,7 @@ class App extends React.Component {
 
       <section className='main'>
         <figure className='container__img'>
-          <img src={logo} />
+          <img src={logo} alt='me' />
         </figure>
         <div className='main__content'>
         <div><strong>Hola,</strong>soy Jimmy Alexander</div>
@@ -97,31 +98,31 @@ class App extends React.Component {
     <h2>Proyectos</h2>
       <div className='proyectos_container'>
         <div className='proyectos_item'>
-          <img src={logo_rick} />
+          <img src={logo_rick} alt='rick' />
           <div className='proyectos_item-info'>
             <p className='proyecto_item-titulo'>RICK AND MORTY</p>
             <a href='https://jimmyalexander.github.io/RickandMorty/' >IR A RICK </a>
           </div>
         </div>
         <div className='proyectos_item'>
-          <img src='https://cdn.dribbble.com/users/1099065/screenshots/11013914/instagramstoryad_2x.jpg' />
+          <img src='https://cdn.dribbble.com/users/1099065/screenshots/11013914/instagramstoryad_2x.jpg' alt='dribble' />
           <div className='proyectos_item-info'>
             <p className='proyecto_item-titulo'>CLON DRIBBLE</p>
-            <a href='' >IR A DRIBBLE</a>
+            <a href='/' >IR A DRIBBLE</a>
           </div>
         </div>
         <div className='proyectos_item'>
-          <img src='https://www.lurebogota.com/wp-content/uploads/2018/07/Massima-1-of-1-49.jpg' />
+          <img src='https://www.lurebogota.com/wp-content/uploads/2018/07/Massima-1-of-1-49.jpg' alt='pizza' />
           <div className='proyectos_item-info'>
             <p className='proyecto_item-titulo'>PIZZABORES</p>
-            <a href='' >IR A PIZZABORES</a>
+            <a href='/' >IR A PIZZABORES</a>
           </div>
         </div>
         <div className='proyectos_item'>
-          <img src='https://i.pinimg.com/originals/18/da/63/18da637b683dbdadb84434b487e4942f.jpg' />
+          <img src='https://i.pinimg.com/originals/18/da/63/18da637b683dbdadb84434b487e4942f.jpg' alt='fruver' />
           <div className='proyectos_item-info'>
             <p className='proyecto_item-titulo'>DISFRUTAS</p>
-            <a href='' >IR A DISFRUTAS</a>
+            <a href='/' >IR A DISFRUTAS</a>
           </div>
         </div>
       </div>
