@@ -20,6 +20,9 @@ body {
       a{
         border-bottom: 2px solid black;
       }
+      a:hover{
+        color: black;
+      }
     }
     .sobre__mi{
       h2{
@@ -29,5 +32,15 @@ body {
     .proyecto_item-titulo{
       color: white;
     }
+    .navbar__list{
+      a{
+        color: black;
+      }
+      a:hover{
+        color: black;
+        border-bottom: 2px solid black;
+       }
+    }
+    
   }
   

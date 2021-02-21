@@ -1,5 +1,7 @@
 .container__navbar{
     padding: 0 20px 0 20px;
+    position: relative;
+    overflow-anchor: hidden;
     a{
         color: white;
         text-decoration: wheat;
@@ -27,16 +29,23 @@
     }
 }
 .navbar__list{
-    padding: 10;
-    position: relative;
+    position: absolute;
+    border-radius: 5px 0 0 5px;
     top: -40px;
-    display: none;
-    background-color:transparentize($color:  $color-light, $amount: 0);
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    padding: 50px  20px 0px 20px;
+    background-color:transparentize($color:  $color-light, $amount: .3);
     flex-direction: column;
     align-items: center;
+    right: -50%;
+    top: 20%;
+    transition-property: right;
+    transition-duration: 1s;
     a{
         text-align: center;
-        width: 50%;
+        width: 100%;
         color:#000022;
         height: 20px;
         padding: 10px;
@@ -48,7 +57,7 @@
     
 }
 .is-active{
-    display: flex;
+    right: 0%;
 }
 
 @keyframes sun {
@@ -112,6 +121,13 @@
        height: 50px;
        position: static;
        border-radius: 5px;
+       background: none;
+       a{
+           color: white;
+       }
+       a:hover{
+        border-bottom: 2px solid white;
+       }
        
    }
    .container__navbar{
