@@ -1,7 +1,5 @@
 .container__navbar{
     padding: 0 20px 0 20px;
-    position: relative;
-    overflow-anchor: hidden;
     a{
         color: white;
         text-decoration: wheat;
@@ -30,23 +28,21 @@
 }
 .navbar__list{
     position: absolute;
-    border-radius: 5px 0 0 5px;
-    top: -40px;
-    display: flex;
-    width: 30%;
     height: 100vh;
+    border-radius: 5px 0 0 5px;
+    display: flex;
     padding: 50px  20px 0px 20px;
     background-color:transparentize($color:  $color-light, $amount: .3);
     flex-direction: column;
     align-items: center;
     right: -50%;
-    top: 20%;
+    top: 15%;
     transition-property: right;
     transition-duration: 1s;
     a{
         text-align: center;
         width: 100%;
-        color:#000022;
+        color:white;
         height: 20px;
         padding: 10px;
     }
@@ -93,6 +89,11 @@
     }
     .burguer{
         display: none;
+    }
+}
+@media  (min-width: 768px) and (max-width:991px){
+    .navbar__list{
+        background: none;
     }
 }
 @media screen and (min-width: 992px){

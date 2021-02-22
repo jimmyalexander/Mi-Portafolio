@@ -5,14 +5,10 @@ import Footer from '../components/Footer';
 import { Main } from '../components/Main';
    
 import '../assets/styles/App.scss';
-import { Navbar } from '../components/Navbar';
 
 const  App = () => {
-
-  
   return (
     <div className='' id='home'>
-      <Navbar />
 
       <Main />
     

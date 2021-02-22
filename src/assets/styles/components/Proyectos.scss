@@ -1,4 +1,5 @@
-
+body{
+}
 .proyectos{
   padding: 20px 20px 10px 20px;
   h2{
@@ -6,69 +7,133 @@
       padding: 10px;
       border-bottom: 1px solid white;
     }
+  h3{
+        color: $background-dark;
+    }
  
   .proyectos_container{
+      display: block;
       text-align: center;
       .proyectos_item{
-          overflow: hidden;
-          padding-bottom: 20px;
-          width: 100%;
-          position: relative;
-          img{
-              width: 90% ;
-              height: 300px;
-          }
-          .proyectos_item-info{
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              height: 300px;
-              width: 90%;
-              position: absolute;
-              left: 5%;
-              top: -90%;
-              background-color: $color-light;
-              opacity: .8;
-              transition-property: top;
-              transition-duration: 1s;
-              
-              a{
-                  color: $color-light;
-                  text-decoration: none;
-                  background-color: white;
-                  width: 50%;
-                  height: 10%;
-                  line-height: 2;
-                  border-radius: 10px;
-              }
-              a:hover{
-                  box-shadow: 1px 1px 2px 1px $color-light;
-                  width: 51%;
-                  height: 11%;
-              }
-             
-          }
-         
-      }
-      .proyectos_item:hover > .proyectos_item-info {
-          display: flex;
-          top: 0%;
-
-      }
+            background: #ccc;
+            border-radius: 10px;
+            margin: 10%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            color: $background-dark;
+            img{
+              padding: 15px;
+              width: 70% ;
+              height: 200px;
+              margin: 10% 5%;
+              border-radius: 27px;
+              background: #c1d2ce;
+              box-shadow:  14px 14px 28px #899592,
+               -14px -14px 28px #f9ffff;
+  
+            }
+            .proyectos_item-info{
+               margin: 5% 2%;
+               width: 100%;
+               p{
+                padding: 10px;
+               }
+               .proyecto_enlaces{
+                   margin: 10%; 
+                   display: flex;
+                   flex-direction: column;
+                   .icon-ancla{
+                       background: purple;
+                   }
+                   a{
+                    transition: all .1s linear;
+                    text-align: center;
+                }
+                a:hover{
+                    border: .5px solid $background-dark;
+                    box-shadow: none;
+                    font-size: 14px;
+                   }
+               }
+               
+            }
+            .proyecto_enlaces a:nth-child(1){
+                color: white;
+                border: 2px solid $background-dark;
+                margin: 10px;
+                text-decoration: none;
+                border-radius: 27px;
+                background: $background-dark;
+                box-shadow:  14px 14px 16px #646d6b,
+                             -14px -14px 16px #ffffff;
+                padding: 10px;
+            }
+            .proyecto_enlaces a:nth-child(2){
+                color: $background-dark;
+                border: 2px solid $background-dark;
+                margin: 10px;
+                text-decoration: none;
+                border-radius: 27px;
+                background: white;
+                box-shadow:  14px 14px 16px #646d6b,
+                             -14px -14px 16px #ffffff;
+                padding: 10px;
+            }
+           
+        
+    }
+    
   }
 }
 
 
 @media screen and (min-width: 768px){
   .proyectos{
-      
+      .proyectos_container{
+          text-align: left;
+          .proyectos_item{
+            display: flex;
+            flex-direction: row;
+            img{
+              margin:5%;
+              width: 40% ;
+              height: 300px;
+            }
+            .proyectos_item-info{
+                .proyecto_enlaces{
+                    flex-direction: row;
+                    a{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
       
   }
 }
 
 @media screen and (min-width: 900px){
   .proyectos_container{
-      display: flex;
+    .proyectos_container{
+        text-align: left;
+        .proyectos_item{
+            flex-direction: row;
+            img{
+                margin:5%;
+                width: 40% ;
+                height: 300px;
+
+            }
+            .proyectos_item-info{
+                .proyecto_enlaces{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
   }
   
   

@@ -13,18 +13,16 @@ body {
   .light{
     background: white;
     color: black;
-    span{
-      color: black;
+    .main{
+      color: white;
     }
     .list{
       a{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
       }
-      a:hover{
-        color: black;
-      }
+      
     }
-    .sobre__mi{
+    .sobre__mi, .proyectos{
       h2{
         border-bottom: 2px solid black;
       }
@@ -34,11 +32,11 @@ body {
     }
     .navbar__list{
       a{
-        color: black;
+        color: white;
       }
       a:hover{
         color: black;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
        }
     }
     

@@ -1,5 +1,8 @@
 import React from 'react'
 import logo_rick from '../assets/static/RandM.png'
+import salon from '../assets/static/salon.jpeg'
+import countries from '../assets/static/countries.jpeg'
+
 
 export const Proyectos = () => {
   return (
@@ -10,31 +13,44 @@ export const Proyectos = () => {
             <div className='proyectos_item'>
               <img src={logo_rick} alt='rick' />
               <div className='proyectos_item-info'>
-                <p className='proyecto_item-titulo'>RICK AND MORTY</p>
-                <a href='https://jimmyalexander.github.io/RickandMorty/' >IR A RICK </a>
+                <h3 className='proyecto_item-titulo'>RICK AND MORTY</h3>
+                <p>Es un sitio web donde podras ver todos los personajes 
+                  de la series de Rick and Morty y consultar algunos datos
+                  curiosos.
+                </p>
+                <div className='proyecto_enlaces'>
+                  <a target='blank' href='https://jimmyalexander.github.io/RickandMorty/' >VER PROYECTO</a>
+                  <a target='blank' href='https://github.com/jimmyalexander/RickandMorty' >VER CODIGO</a>
+                </div>
+
               </div>
             </div>
             <div className='proyectos_item'>
-              <img src='https://cdn.dribbble.com/users/1099065/screenshots/11013914/instagramstoryad_2x.jpg' alt='dribble' />
+              <img src={salon} alt='salon' />
               <div className='proyectos_item-info'>
-                <p className='proyecto_item-titulo'>CLON DRIBBLE</p>
-                <a href='/' >IR A DRIBBLE</a>
+                <h3 className='proyecto_item-titulo'>SALON DE EVENTOS</h3>
+                <p>Un sitio web donde se muestra los servicios prestados por
+                  una casa de eventos para toda la familia.
+                </p>
+                <div className='proyecto_enlaces'>
+                  <a target='blank' href='https://jimmyalexander.github.io/salon-eventos/' >VER PROYECTO</a>
+                  <a target='blank' href='https://github.com/jimmyalexander/salon-eventos' >VER CODIGO</a>
+                </div>
               </div>
             </div>
             <div className='proyectos_item'>
-              <img src='https://www.lurebogota.com/wp-content/uploads/2018/07/Massima-1-of-1-49.jpg' alt='pizza' />
+              <img src={countries} alt='countries' />
               <div className='proyectos_item-info'>
-                <p className='proyecto_item-titulo'>PIZZABORES</p>
-                <a href='/' >IR A PIZZABORES</a>
+                <h3 className='proyecto_item-titulo'>COUNTRIES</h3>
+                <p>Encontraras detalles de los paises en cada continente
+                  y algunos lugares en cada uno de ellos.
+                </p>
+                <div className='proyecto_enlaces'>
+                  <a target='blank' href='https://jimmyalexander.github.io/countries/' >VER PROYECTO</a>
+                  <a target='blank' href='https://github.com/jimmyalexander/countries' >VER CODIGO</a>
+                </div>
               </div>
-            </div>
-            <div className='proyectos_item'>
-              <img src='https://i.pinimg.com/originals/18/da/63/18da637b683dbdadb84434b487e4942f.jpg' alt='fruver' />
-              <div className='proyectos_item-info'>
-                <p className='proyecto_item-titulo'>DISFRUTAS</p>
-                <a href='/' >IR A DISFRUTAS</a>
-              </div>
-            </div>
+            </div>            
           </div>
        </section>
     </div>
