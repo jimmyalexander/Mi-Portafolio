@@ -3,11 +3,14 @@ import { mdiTwitter, mdiGithub, mdiLinkedin} from '@mdi/js';
 
 import logo from '../assets/static/me.jpg';
 import Icon from '../components/Iconos';
+import { Navbar } from './Navbar';
 
 export const Main = () => {
   return (
     <div>
       <section className='main'>
+      <Navbar />
+      
         <figure className='container__img'>
           <img src={logo} alt='me' />
         </figure>
