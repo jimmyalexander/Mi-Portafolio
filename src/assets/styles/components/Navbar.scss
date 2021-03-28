@@ -1,33 +1,38 @@
 .container__navbar{
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
     a{
         color: white;
         text-decoration: wheat;
-
+        
     }
 }
 .burguer{
-   position: relative;
-   top: -90px;
-   left: 90%;
+    position: fixed;
+    top: 20px;
+    left: 90%;
+    z-index: 1000;
 }
 .sun{
     position: relative;
-    top: -60px;
+    top: -35px;
     left: 80%;
     animation-name: sun;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 .container__icon{
     padding: 10px;
+    margin: 0;
     strong{
         color: lighten($color: $color-light, $amount: 1);
     }
+    
 }
 .navbar__list{
-    position: absolute;
+    position: fixed;
+    z-index: 900;
     height: 100vh;
     border-radius: 5px 0 0 5px;
     display: flex;
@@ -92,14 +97,24 @@
     }
 }
 @media  (min-width: 768px) and (max-width:991px){
-    .navbar__list{
-        background: none;
+    .container__navbar{
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100%;
+        background: rgba(109, 52, 243, 0.9);
+        z-index: 1000;
+        height: 50px;
+        .navbar__list{
+            background: none;
+        }
     }
 }
 @media screen and (min-width: 992px){
     .container__navbar{
         display: flex;
         justify-content: space-evenly;
+       position: relative;
     }
     .container__icon{
         padding: 0%;
@@ -133,6 +148,18 @@
    }
    .container__navbar{
       
+   }
+   .fix{
+    position: fixed;
+    width: 100%;
+    background: rgba(109, 52, 243, 0.9);
+    z-index: 1000;
+    height: 50px;
+   }
+   .section_active{
+       background: rgba(250,250,250,0.5);
+       color: purple;
+       transition: all .5s linear;
    }
   
 }

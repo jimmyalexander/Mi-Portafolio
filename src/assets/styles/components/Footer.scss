@@ -5,4 +5,34 @@ footer{
     .iconfooter{
         color: $color-light;
     }
+    .main_icon-row-home{
+        position: absolute;
+        right: 5%;
+        bottom:-480%;
+        background: $color-light;
+        border-radius: 50%;
+        animation-name: saltorow;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
 }
+
+
+
+@media screen and (min-width: 768px){
+    footer{
+        .main_icon-row-home{
+            bottom:-350%;
+        }
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    footer{
+        .main_icon-row-home{
+            bottom:-360%;
+        }
+    }
+  }
+  

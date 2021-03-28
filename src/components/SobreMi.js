@@ -6,7 +6,7 @@ import Icon from '../components/Iconos';
 export const SobreMi = () => {
   return (
     <div>
-      <section id='sobre-mi' className='sobre__mi' >
+      <section  id='sobre-mi' className='sobre__mi' >
         <h2>Sobre mi</h2>
         <h3>Frontend Developer</h3>
         <p className='description'>

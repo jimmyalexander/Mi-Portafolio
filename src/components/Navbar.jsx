@@ -9,7 +9,8 @@ export const Navbar = () => {
       cambio: false,
     }
   )
-    const { cambio, active, } = state;
+  const { cambio, active, } = state;
+  const [scrll, setScrll] = useState(0)
   const handleClicked = (e) =>{
         e.preventDefault();
              setState({
@@ -25,22 +26,25 @@ export const Navbar = () => {
            cambio: false
          })
   }
+  window.onscroll = function() {
+    setScrll( window.scrollY);
+  };
   
   return (
   
-        <div className='container__navbar'>
+        <div className={ scrll > 1 ? 'container__navbar fix' : 'container__navbar' }>
           <h2 className='container__icon'><a href='/#'><span>Jimmy</span><strong>Alexander</strong></a></h2>
           
-            <Icon  onClick={handleClicked} className='sun' icon={cambio === false ? `${mdiWhiteBalanceSunny }` : `${mdiMoonWaxingCrescent}`} />
+            <Icon className='icons' onClick={handleClicked} className='sun' icon={cambio === false ? `${mdiWhiteBalanceSunny }` : `${mdiMoonWaxingCrescent}`} />
           
           
             <Icon  onClick={handleClick} className={`burguer`}  icon={active === false ? `${mdiFormatLineWeight}` : `${mdiWindowClose}`}  />
           
-          <ul  className={`navbar__list ${active ?'is-active':' '}`}>
-            <a href='#home'>Home</a>
-            <a href='#sobre-mi' >SobreMi</a>
-            <a href='/principal/certificados'>Certificados</a>
-            <a  href='#proyectos'>Proyectos</a>
+          <ul  className={active ?'navbar__list is-active':'navbar__list'}>
+            <a className={scrll >100 && scrll < 400? 'section_active' : ''} href='#home'>Home</a>
+            <a className={scrll >600 && scrll < 1050 ? 'section_active' : ''} href='#sobre-mi' >SobreMi</a>
+            <a  href='/principal/certificados'>Certificados</a>
+            <a className={scrll >1050  ? 'section_active' : ''}  href='#proyectos'>Proyectos</a>
           </ul>
         </div>
     
