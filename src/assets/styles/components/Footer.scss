@@ -6,9 +6,9 @@ footer{
         color: $color-light;
     }
     .main_icon-row-home{
-        position: absolute;
-        right: 5%;
-        bottom:-480%;
+        position: relative;
+        right: -40%;
+        bottom: 20px;
         background: $color-light;
         border-radius: 50%;
         animation-name: saltorow;
@@ -23,7 +23,7 @@ footer{
 @media screen and (min-width: 768px){
     footer{
         .main_icon-row-home{
-            bottom:-350%;
+           
         }
     }
   }
@@ -31,7 +31,6 @@ footer{
   @media screen and (min-width: 900px){
     footer{
         .main_icon-row-home{
-            bottom:-360%;
         }
     }
   }
