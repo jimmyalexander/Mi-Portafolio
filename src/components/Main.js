@@ -1,7 +1,7 @@
 import React from 'react';
 import { mdiTwitter, mdiGithub, mdiLinkedin,mdiArrowDownCircle} from '@mdi/js';
 
-import logo from '../assets/static/me.jpg';
+import logo from '../assets/static/me.png';
 import Icon from '../components/Iconos';
 import { Navbar } from './Navbar';
 

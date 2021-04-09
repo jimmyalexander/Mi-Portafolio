@@ -33,7 +33,7 @@ export const Navbar = () => {
   return (
   
         <div className={ scrll > 1 ? 'container__navbar fix' : 'container__navbar' }>
-          <h2 className='container__icon'><a href='/#'><span>Jimmy</span><strong>Alexander</strong></a></h2>
+          <h2 className='container__icon'><a href='/'><span>Jimmy</span><strong>Alexander</strong></a></h2>
           
             <Icon className='icons' onClick={handleClicked} className='sun' icon={cambio === false ? `${mdiWhiteBalanceSunny }` : `${mdiMoonWaxingCrescent}`} />
           
@@ -45,6 +45,7 @@ export const Navbar = () => {
             <a className={scrll >600 && scrll < 1050 ? 'section_active' : ''} href='#sobre-mi' >SobreMi</a>
             <a  href='/principal/certificados'>Certificados</a>
             <a className={scrll >1050  ? 'section_active' : ''}  href='#proyectos'>Proyectos</a>
+            
           </ul>
         </div>
     
