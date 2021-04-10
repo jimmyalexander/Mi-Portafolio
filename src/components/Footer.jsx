@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { mdiCardsHeart, mdiArrowUpCircle  } from '@mdi/js' 
 import Icon from '../components/Iconos'
 
 const Footer = () => {
+    const refi = useRef(null)
+  
+    useEffect(() => {
+      //console.log(refi.current.offsetTop)
+    },  )
+
     return(
-        <footer name='footer'>© 2020, Built with <Icon className='iconfooter'  icon={mdiCardsHeart} />
+        <footer ref={refi}  name='footer'>© 2020, Built with <Icon className='iconfooter opacity '  icon={mdiCardsHeart} />
             by Jimmy Castiblanco
             <a href='#home'><Icon title='lower'  size={1.5} className='main_icon-row-home' color='white' icon={ mdiArrowUpCircle  } /></a>
         </footer>

@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
+import { UserContext } from '../containers/UserContext'
 
 export const Feedback = () => {
+  const [aparicion, setAparicion] = useState(0)
+  const {scroll} = useContext(UserContext)
+  const refi = useRef(null)
+
+  useEffect(() => {
+    setAparicion(refi.current.offsetTop - 400)
+  }, [] )
+
+  
+
   return (
-    <div className='feedback_container'>
+    <div>
+      <div ref={refi} className={ scroll >= aparicion? 'feedback_container': 'feedback_container opacity'}>
       <h2>Testimonios</h2>
       <div className='feedback'>
         <div className="feedback_img">
@@ -15,6 +27,7 @@ export const Feedback = () => {
           <p>Frontend Enginner at Resuelve tu Deuda</p>
         </div>
       </div>
+    </div>
     </div>
   )
 }

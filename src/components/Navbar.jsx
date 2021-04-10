@@ -1,8 +1,11 @@
-import React,{ useState } from 'react'
+import React,{ useContext, useState } from 'react'
 import { mdiFormatLineWeight, mdiWhiteBalanceSunny,mdiWindowClose,mdiMoonWaxingCrescent} from '@mdi/js'
 import Icon from './Iconos'
+import { UserContext } from '../containers/UserContext'
 
 export const Navbar = () => {
+  const {scroll} = useContext(UserContext)
+
   const [state, setState] = useState(
     {
       active: false,
@@ -10,7 +13,6 @@ export const Navbar = () => {
     }
   )
   const { cambio, active, } = state;
-  const [scrll, setScrll] = useState(0)
   const handleClicked = (e) =>{
         e.preventDefault();
              setState({
@@ -26,25 +28,23 @@ export const Navbar = () => {
            cambio: false
          })
   }
-  window.onscroll = function() {
-    setScrll( window.scrollY);
-  };
+  
   
   return (
   
-        <div className={ scrll > 1 ? 'container__navbar fix' : 'container__navbar' }>
+        <div className={ scroll > 1 ? 'container__navbar fix' : 'container__navbar' }>
           <h2 className='container__icon'><a href='/'><span>Jimmy</span><strong>Alexander</strong></a></h2>
           
-            <Icon className='icons' onClick={handleClicked} className='sun' icon={cambio === false ? `${mdiWhiteBalanceSunny }` : `${mdiMoonWaxingCrescent}`} />
+            <Icon  onClick={handleClicked} className='sun icons' icon={cambio === false ? `${mdiWhiteBalanceSunny }` : `${mdiMoonWaxingCrescent}`} />
           
           
             <Icon  onClick={handleClick} className={`burguer`}  icon={active === false ? `${mdiFormatLineWeight}` : `${mdiWindowClose}`}  />
           
           <ul  className={active ?'navbar__list is-active':'navbar__list'}>
-            <a className={scrll >100 && scrll < 400? 'section_active' : ''} href='#home'>Home</a>
-            <a className={scrll >600 && scrll < 1050 ? 'section_active' : ''} href='#sobre-mi' >SobreMi</a>
+            <a className={scroll >100 && scroll < 400? 'section_active' : ''} href='#home'>Home</a>
+            <a className={scroll >600 && scroll < 1050 ? 'section_active' : ''} href='#sobre-mi' >SobreMi</a>
             <a  href='/principal/certificados'>Certificados</a>
-            <a className={scrll >1050  ? 'section_active' : ''}  href='#proyectos'>Proyectos</a>
+            <a className={scroll >1050  ? 'section_active' : ''}  href='#proyectos'>Proyectos</a>
             
           </ul>
         </div>
