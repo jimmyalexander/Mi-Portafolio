@@ -37,22 +37,23 @@
     border-radius: 5px 0 0 5px;
     display: flex;
     padding: 50px  20px 0px 20px;
-    background-color:transparentize($color:  $color-light, $amount: .3);
+    background-color:transparentize($color:  $background-dark, $amount: .3);
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     right: -50%;
-    top: 15%;
+    top: 5%;
     transition-property: right;
     transition-duration: 1s;
     a{
         text-align: center;
         width: 100%;
+        margin: 20px 0;
         color:white;
-        height: 20px;
         padding: 10px;
     }
     a:hover{
-        border-bottom: 2px solid #000022;
+        border-bottom: 2px solid white;
         color: white;
     }
     

@@ -1,4 +1,4 @@
-import React from 'react'   
+import React, { useState } from 'react'   
 import { Proyectos } from '../components/Proyectos';
 import { SobreMi } from '../components/SobreMi';
 import Footer from '../components/Footer';
@@ -6,23 +6,33 @@ import { Main } from '../components/Main';
    
 import '../assets/styles/App.scss';
 import { Feedback } from '../components/Feedback';
+import { UserContext } from './UserContext';
 
-const  App = () => {
+const  Principal = () => {
+  const [scroll, setScroll] = useState(0)
+
+  
   return (
-    <div className='' id='home'>
+    <UserContext.Provider value={
+     {
+      scroll,
+      setScroll
+     }
+    }>
+      <div className='' id='home'>
 
-      <Main />
-    
-      <SobreMi />
+        <Main />
+      
+        <SobreMi />
 
-      <Proyectos />
+        <Proyectos />
 
-      <Feedback />
+        <Feedback />
 
-      <Footer id='enlace' />
-    </div>
+        <Footer  id='enlace' />
+      </div>
+    </UserContext.Provider>
   )
 }
 
-export default App;
-
+export default Principal;

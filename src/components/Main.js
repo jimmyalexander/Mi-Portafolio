@@ -15,7 +15,7 @@ export const Main = () => {
             <figure className='container__img'>
               <img src={logo} alt='me' />
             </figure>
-            <div className='main__content'>
+            <div className='main__content '>
               <div><strong>Hola,</strong>soy Jimmy Alexander</div>
               <h1 className='title'>
                 Frontend Developer

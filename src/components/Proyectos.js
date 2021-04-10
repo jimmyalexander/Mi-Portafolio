@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import logo_rick from '../assets/static/RandM.png'
 import salon from '../assets/static/salon.jpeg'
 import countries from '../assets/static/countries.jpeg'
+import { UserContext } from '../containers/UserContext'
 
 
 export const Proyectos = () => {
+  const [aparicion, setAparicion] = useState(0)
+  const refi = useRef(null)
+  const {scroll} = useContext(UserContext)
+
+  useEffect(() => {
+    setAparicion(refi.current.offsetTop - 300)
+  }, [] )
+
+  
   return (
     <div>
-      <section className='proyectos' id='proyectos'>
+      <section ref={refi} className={ scroll >= aparicion   ? 'proyectos': 'proyectos opacity' }id='proyectos'>
         <h2>Proyectos</h2>
           <div className='proyectos_container'>
+
             <div className='proyectos_item'>
               <img src={logo_rick} alt='rick' />
               <div className='proyectos_item-info'>
