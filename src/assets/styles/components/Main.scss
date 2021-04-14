@@ -29,10 +29,11 @@
             animation-delay: 1.6s;
             animation-fill-mode: forwards;
             img{
-                width: 60%;
+                width: 80%;
                 height: 40vh;
-                border-radius: 50%;
-                background: rgba($color: #999, $alpha: 0.8);
+                box-shadow: 5px 5px 20px $color-light;
+                border-radius: 2%;
+                background: rgba($color: #55cc, $alpha: 0.5);
 
         }
     }
@@ -172,10 +173,10 @@
             .container__img{
                 width: 50%;
                 img{
-                    width: 50%;
+                    width: 60%;
                     height: 40vh;
-                    border-radius: 50%;
-                    background: rgba($color: #999, $alpha: 0.8);
+                    border-radius: 2%;
+                    background: rgba($color: #55cc, $alpha: 0.5);
                 }
             }
             
@@ -183,6 +184,22 @@
     }
     
 
+}
+
+@keyframes bordersLight {
+    0%{
+        box-shadow: 5px 5px 20px #f4b955;
+    }
+    50%{
+        box-shadow: 5px 5px 20px cyan;
+    }
+    75%{
+
+        box-shadow: 5px 5px 20px #aaff55;
+    }
+    100%{
+        box-shadow: 5px 5px 20px $color-light;
+    }
 }
 @keyframes saludoMainTranslate {
     to{
