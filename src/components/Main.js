@@ -16,7 +16,7 @@ export const Main = () => {
               <img src={logo} alt='me' />
             </figure>
             <div className='main__content '>
-              <div><strong>Hola,</strong>soy Jimmy Alexander</div>
+              <div className='saludo'><strong>Hola,</strong>soy Jimmy Alexander</div>
               <h1 className='title'>
                 Frontend Developer
               </h1>
