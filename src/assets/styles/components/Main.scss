@@ -136,7 +136,8 @@
             .container__img{
                 margin-top: 10%;
                 img{
-                    width: 50%;
+                    width: 40%;
+                    height: 30vh;
                 }
             }
         }
@@ -172,7 +173,10 @@
             }
             .container__img{
                 width: 50%;
+                position: relative;
                 img{
+                    position: relative;
+                    top: -8%;
                     width: 60%;
                     height: 40vh;
                     border-radius: 2%;
