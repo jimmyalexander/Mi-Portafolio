@@ -1,12 +1,12 @@
-body{
-}
+
 .proyectos{
   padding: 20px 20px 10px 20px;
   transition: all 1s ease;
+  
   h2{
       color: $color-light;
       padding: 10px;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid $color-light;
     }
   h3{
         color: $background-dark;
@@ -16,7 +16,7 @@ body{
       display: block;
       text-align: center;
       .proyectos_item{
-            background: #ccc;
+            background: #eeffef;
             border-radius: 10px;
             margin: 10%;
             display: flex;
@@ -40,6 +40,8 @@ body{
                width: 100%;
                p{
                 padding: 10px;
+                font-weight: bold;
+                color: #999;
                }
                .proyecto_enlaces{
                    margin: 10%; 
@@ -53,7 +55,7 @@ body{
                     text-align: center;
                 }
                 a:hover{
-                    border: .5px solid $background-dark;
+                    border: .5px solid darken($color: $color-light, $amount: 1);
                     box-shadow: none;
                     font-size: 14px;
                    }
@@ -62,18 +64,18 @@ body{
             }
             .proyecto_enlaces a:nth-child(1){
                 color: white;
-                border: 2px solid $background-dark;
+                border: 2px solid darken($color: $color-light, $amount: 0.5);
                 margin: 10px;
                 text-decoration: none;
                 border-radius: 27px;
-                background: $background-dark;
+                background: $color-light;
                 box-shadow:  14px 14px 16px #646d6b,
                              -14px -14px 16px #ffffff;
                 padding: 10px;
             }
             .proyecto_enlaces a:nth-child(2){
-                color: $background-dark;
-                border: 2px solid $background-dark;
+                color: $color-light;
+                border: 2px solid darken($color: $color-light, $amount: 0.5);
                 margin: 10px;
                 text-decoration: none;
                 border-radius: 27px;

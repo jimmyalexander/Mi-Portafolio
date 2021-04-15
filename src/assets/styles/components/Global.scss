@@ -9,15 +9,15 @@ html{
 }
 body {
     margin: 0;
-    background: $background-dark;
-    color: white;
-    font-family: 'Space Mono', monospace;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    background: white ;
+    color: black ;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
   }
   .light{
-    background: white;
-    color: black;
+    background: #ccc ;
+    color:  white;
     .main{
       color: white;
     }
@@ -29,11 +29,11 @@ body {
     }
     .sobre__mi, .proyectos{
       h2{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid #eeffef;
       }
     }
     .proyecto_item-titulo{
-      color: white;
+      color: black;
     }
     .navbar__list{
       a{
@@ -46,8 +46,11 @@ body {
 
     .feedback_container{
       h2{
-        border-bottom:2px solid black;
+        border-bottom:2px solid #eeffef;
       }
+    }
+    footer{
+      color: black;
     }
     
   }

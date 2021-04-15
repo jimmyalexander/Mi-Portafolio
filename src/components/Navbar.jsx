@@ -40,15 +40,15 @@ export const Navbar = () => {
         <div className={ scroll > 1 ? 'container__navbar fix' : 'container__navbar' }>
           <h2 className='container__icon'><a href='/Mi-Portafolio/'><span>Jimmy</span><strong>Alexander</strong></a></h2>
           
-            <Icon  onClick={handleClicked} className='sun icons' icon={cambio === false ? `${mdiWhiteBalanceSunny }` : `${mdiMoonWaxingCrescent}`} />
+            <Icon color='white' onClick={handleClicked} className='sun icons' icon={cambio === false ? `${mdiMoonWaxingCrescent}` : `${mdiWhiteBalanceSunny}`} />
           
           
-            <Icon  onClick={handleClick} className={`burguer`}  icon={active === false ? `${mdiFormatLineWeight}` : `${mdiWindowClose}`}  />
+            <Icon  onClick={handleClick} className={`burguer`} color='white'  icon={active === false ? `${mdiFormatLineWeight}` : `${mdiWindowClose}`}  />
           
           <ul  className={active ?'navbar__list is-active':'navbar__list'}>
             <a onClick={ir} className={scroll >100 && scroll < 400? 'section_active' : ''} href='#home'>Home</a>
-            <a onClick={ir}  className={scroll >600 && scroll < 1050 ? 'section_active' : ''} href='#sobre-mi' >SobreMi</a>
-            <a onClick={ir} className={scroll >1050  && scroll < 2800? 'section_active' : ''}  href='#proyectos'>Proyectos</a>
+            <a onClick={ir}  className={scroll >600 && scroll < 969 ? 'section_active' : ''} href='#sobre-mi' >SobreMi</a>
+            <a onClick={ir} className={scroll >970  && scroll < 2800? 'section_active' : ''}  href='#proyectos'>Proyectos</a>
             
           </ul>
         </div>

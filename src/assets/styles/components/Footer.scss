@@ -1,8 +1,10 @@
 footer{
     padding: 20px;
     display: block;
+    line-height: 2;
     text-align: center;
-    margin-top: 10%;
+    background: #eeffef;
+    font-weight: bold;
     .iconfooter{
         color: $color-light;
     }

@@ -2,7 +2,7 @@
   width: 100%;
   transition: all 1s ease;
   h2{
-    border-bottom:  2px solid  white;
+    border-bottom:  2px solid  $color-light;
     color:$color-light;
     padding: 10px;
     margin:  20px;
@@ -12,7 +12,7 @@
   margin: 10% auto;
   border-radius: 10px;
   width: 75%;
-  background: #ccc;
+  background: #eeffef;
   color: $background-dark;
   padding: 20px 20px 10px 20px;
   opacity: 05;
@@ -33,6 +33,8 @@
   .feedback_info{
     p{
       font-size: 14px;
+      font-weight: bold;
+      color: #999;
     }
   }
 }
