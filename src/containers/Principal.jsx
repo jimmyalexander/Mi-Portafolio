@@ -7,11 +7,15 @@ import { Main } from '../components/Main';
 import '../assets/styles/App.scss';
 import { Feedback } from '../components/Feedback';
 import { UserContext } from './UserContext';
+import { SkillSet } from '../components/SkillSet';
 
 const  Principal = () => {
   const [scroll, setScroll] = useState(0)
 
-  
+  window.onscroll = function() {
+    setScroll(window.scrollY)
+  };
+
   return (
     <UserContext.Provider value={
      {
@@ -26,6 +30,8 @@ const  Principal = () => {
         <SobreMi />
 
         <Proyectos />
+
+        <SkillSet />
 
         <Feedback />
 

@@ -1,0 +1,34 @@
+//buttons
+@mixin button {
+  color: white;
+  border: 2px solid darken($color: $color-light, $amount: 0.5);
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 27px;
+  background: $color-light;
+  box-shadow:  14px 14px 16px #646d6b,
+               -14px -14px 16px #ffffff;
+  padding: 10px; 
+}
+
+@mixin buttonLight {
+  color: $color-light;
+  border: 2px solid darken($color: $color-light, $amount: 0.5);
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 27px;
+  background: white;
+  box-shadow:  14px 14px 16px #646d6b,
+               -14px -14px 16px #ffffff;
+  padding: 10px;
+}
+
+
+//encabezado
+
+@mixin titlePrincipal {
+  text-align: center;
+  color: $color-light;
+  padding: 10px;
+  border-bottom: 2px solid $color-light;
+}

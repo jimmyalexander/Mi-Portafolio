@@ -40,11 +40,13 @@
         animation-name: imgMainOpacity;
         opacity: 0;
         animation-duration: 2s;
-        animation-delay: 2.5s;
+        box-sizing: content-box;
+        animation-delay: 0.3s;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
         .main__icon-code{
             position: absolute;
+            width: 5%;
             top: 30%;
             left: 46%;
             animation-name: imgMainOpacity;
@@ -188,6 +190,8 @@
             }
 
             .main__icon{
+                animation-delay: 2.5s;
+
                 .main__icon-code{
                     left: 38%;
                 }

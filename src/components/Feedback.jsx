@@ -1,21 +1,19 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
-import { UserContext } from '../containers/UserContext'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Feedback = () => {
-  const [aparicion, setAparicion] = useState(0)
-  const {scroll} = useContext(UserContext)
-  const refi = useRef(null)
-
   useEffect(() => {
-    setAparicion(refi.current.offsetTop - 400)
-  }, [] )
-
+    AOS.init({
+    duration:1000
+    })
+}, [])
   
 
   return (
     <div>
-      <div ref={refi} className={ scroll >= aparicion? 'feedback_container': 'feedback_container opacity'}>
-      <h2>Testimonios</h2>
+      <div data-aos="fade-up" className='feedback_container'>
+      <h2>FEEDBACK</h2>
       <div className='feedback'>
         <div className="feedback_img">
           <img src="https://pbs.twimg.com/profile_images/1248766401034190848/k1qOv_rp_400x400.jpg" alt="freddy"/>

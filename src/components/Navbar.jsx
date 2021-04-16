@@ -35,6 +35,7 @@ export const Navbar = () => {
     })
   }
   
+  
   return (
   
         <div className={ scroll > 1 ? 'container__navbar fix' : 'container__navbar' }>
@@ -46,10 +47,10 @@ export const Navbar = () => {
             <Icon  onClick={handleClick} className={`burguer`} color='white'  icon={active === false ? `${mdiFormatLineWeight}` : `${mdiWindowClose}`}  />
           
           <ul  className={active ?'navbar__list is-active':'navbar__list'}>
-            <a onClick={ir} className={scroll >100 && scroll < 400? 'section_active' : ''} href='#home'>Home</a>
+            <a onClick={ir} className={scroll >100 && scroll < 400? 'section_active' : ''} href='#home'>Inicio</a>
             <a onClick={ir}  className={scroll >600 && scroll < 969 ? 'section_active' : ''} href='#sobre-mi' >SobreMi</a>
-            <a onClick={ir} className={scroll >970  && scroll < 2800? 'section_active' : ''}  href='#proyectos'>Proyectos</a>
-            
+            <a onClick={ir} className={scroll >970  && scroll < 2500? 'section_active' : ''}  href='#proyectos'>Portafolio</a>
+            <a onClick={ir} className={scroll >2700  && scroll < 3000? 'section_active' : ''}  href='#skill'>Skillset</a>
           </ul>
         </div>
     

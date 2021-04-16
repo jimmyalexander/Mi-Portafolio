@@ -1,12 +1,8 @@
 .feedback_container{
-  width: 100%;
+  padding: 20px 20px;
   transition: all 1s ease;
   h2{
-    border-bottom:  2px solid  $color-light;
-    color:$color-light;
-    padding: 10px;
-    margin:  20px;
-
+    @include titlePrincipal;
   }
 .feedback{
   margin: 10% auto;

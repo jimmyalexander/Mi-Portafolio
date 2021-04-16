@@ -65,6 +65,17 @@
     }
     
 }
+.fix{
+    position: fixed;
+    width: 100%;
+    background: $color-light;
+    z-index: 1500;
+    height: 50px;
+    box-shadow: 2px 5px 7px #555;
+    strong{
+        text-shadow: 2px 1px 5px black;
+    }
+}
 .is-active{
     right: 0%;
 }
@@ -77,6 +88,8 @@
         opacity: .1;
     }
 }
+
+
 @media screen and (min-width: 768px){
     .container__navbar{
         display: flex;
@@ -123,7 +136,7 @@
     .fix{
         position: fixed;
         width: 100%;
-        background: $background-dark;
+        background: $color-light;
         opacity: 0.97;
         z-index: 2000;
         height: 50px;
@@ -206,6 +219,7 @@
     background: $color-light;
     z-index: 1500;
     height: 50px;
+    box-shadow: 2px 5px 7px #555;
     strong{
         text-shadow: 2px 1px 5px black;
     }

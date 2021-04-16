@@ -1,18 +1,12 @@
-.container__habilidades{
-  display: flex;
-  justify-content: space-evenly;
-  
-}
-
 .sobre__mi{
+  background: $background-light;
   padding: 20px 20px 10px 20px;
   transition: all 1s ease;
   color: #999;
   font-weight: bolder;
+  height: 50vh;
   h2{
-      color: $color-light;
-      padding: 10px;
-      border-bottom: 1px solid $color-light;
+     @include titlePrincipal;
   }
   h3{
     color: #333;

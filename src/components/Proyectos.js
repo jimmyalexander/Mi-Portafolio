@@ -1,27 +1,30 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
-import logo_rick from '../assets/static/RandM.png'
-import salon from '../assets/static/salon.jpeg'
-import countries from '../assets/static/countries.jpeg'
-import { UserContext } from '../containers/UserContext'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import logo_rick from '../assets/static/RandM.png';
+import salon from '../assets/static/salon.jpeg';
+import countries from '../assets/static/countries.jpeg';
 
 
 export const Proyectos = () => {
-  const [aparicion, setAparicion] = useState(0)
-  const refi = useRef(null)
-  const {scroll} = useContext(UserContext)
-
   useEffect(() => {
-    setAparicion(refi.current.offsetTop - 300)
-  }, [] )
+    AOS.init({
+    duration:1000,
+    delay: 200, 
+    })
+}, [])
+
+
 
   
   return (
     <div>
-      <section ref={refi} className={ scroll >= aparicion   ? 'proyectos': 'proyectos opacity' }id='proyectos'>
-        <h2>Proyectos</h2>
+      <section  data-aos="fade-up"  className='proyectos' id='proyectos'>
+        <h2>PORTAFOLIO</h2>
           <div className='proyectos_container'>
 
-            <div className='proyectos_item'>
+            <div data-aos="fade-up" className='proyectos_item'>
               <img src={logo_rick} alt='rick' />
               <div className='proyectos_item-info'>
                 <h3 className='proyecto_item-titulo'>RICK AND MORTY</h3>
@@ -36,7 +39,7 @@ export const Proyectos = () => {
 
               </div>
             </div>
-            <div className='proyectos_item'>
+            <div data-aos="fade-up" className='proyectos_item'>
               <img src={salon} alt='salon' />
               <div className='proyectos_item-info'>
                 <h3 className='proyecto_item-titulo'>SALON DE EVENTOS</h3>
@@ -49,7 +52,7 @@ export const Proyectos = () => {
                 </div>
               </div>
             </div>
-            <div className='proyectos_item'>
+            <div data-aos="fade-up" className='proyectos_item'>
               <img src={countries} alt='countries' />
               <div className='proyectos_item-info'>
                 <h3 className='proyecto_item-titulo'>COUNTRIES</h3>
