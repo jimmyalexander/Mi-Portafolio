@@ -15,7 +15,7 @@ export const Main = () => {
 
         <div className='container_main-data'>
             <div className='container__img'>
-              <video  autoPlay loop>
+              <video  autoPlay loop muted>
                 <source src={video } type="video/mp4" />
               </video>
             </div>
