@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {  mdiGit,mdiReact, mdiLanguageJavascript, mdiLanguageCss3, mdiLanguageHtml5, mdiBootstrap, mdiSass } from '@mdi/js';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Icon from '../components/Iconos';
 
 export const SkillSet = () => {
+  useEffect(() => {
+    AOS.init({
+    duration:1000
+    })
+}, [])
   return (
-    <div className='skills' id='skill'>
+    <div data-aos="fade-up"  className='skills' id='skill'>
       <h2>SKILLSET</h2>
 
       <div   className='container__skill'>
