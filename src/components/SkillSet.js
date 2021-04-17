@@ -11,7 +11,8 @@ export const SkillSet = () => {
     })
 }, [])
   return (
-    <div data-aos="fade-up"  className='skills' id='skill'>
+    <div id='skill'>
+      <div data-aos="fade-up"  className='skills' >
       <h2>SKILLSET</h2>
 
       <div   className='container__skill'>
@@ -24,5 +25,7 @@ export const SkillSet = () => {
           <Icon size='150' title='GITHUB'  className='iconos' icon={mdiGit} color='red' />
         </div>
     </div>
+    </div>
+    
   )
 }

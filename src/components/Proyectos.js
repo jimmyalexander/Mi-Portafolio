@@ -19,8 +19,8 @@ export const Proyectos = () => {
 
   
   return (
-    <div>
-      <section  data-aos="fade-up"  className='proyectos' id='proyectos'>
+    <div id='proyectos'>
+      <section  data-aos="fade-up"  className='proyectos' >
         <h2>PORTAFOLIO</h2>
           <div className='proyectos_container'>
 

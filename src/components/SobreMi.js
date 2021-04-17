@@ -13,13 +13,13 @@ export const SobreMi = () => {
   
 
   return (
-    <div>
-      <section data-aos="fade-up"  id='sobre-mi' className='sobre__mi' >
+    <div id='sobre-mi'>
+      <section data-aos="fade-up"   className='sobre__mi' >
         <h2>SOBRE MI</h2>
         <h3>Frontend Developer</h3>
         <p className='description'>
-          Hola! Mi nombre es Jimmy Alexander Castiblanco, Colombiano emprendedor. Estudiante de Platzi actualmente ,
-          empece de lleno en le mundo de la programación en el año 2018, <br /> 
+          Hola! Mi nombre es Jimmy Alexander Castiblanco, amante a la tecnologia. Estudiante y trabajador actualmente ,
+          empece de lleno en le mundo de la programación en el año 2018 donde me propuse ser Frontend Developer, <br /> 
           <br />
           Quiero llegar a ser uno de 
           los mejores desarrolladores frontend, me gusta jugar  futbol y  videojuegos,  amo la vida que tengo y mi
