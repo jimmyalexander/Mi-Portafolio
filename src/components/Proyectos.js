@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 
 import salon from '../assets/static/salon.jpeg';
 import countries from '../assets/static/countries.jpeg';
+import df from '../assets/static/df.png';
 
 
 export const Proyectos = () => {
@@ -22,6 +23,20 @@ export const Proyectos = () => {
       <section  data-aos="fade-up"  className='proyectos' >
         <h2>PORTAFOLIO</h2>
           <div className='proyectos_container'>
+
+          <div data-aos="fade-up" className='proyectos_item'>
+              <img src={df} alt='salon' />
+              <div className='proyectos_item-info'>
+                <h3 className='proyecto_item-titulo'>Disfrutas</h3>
+                <p>Una tienda virtual donde podras encontrar productos 
+                    como frutas y verduras entre otros.
+                </p>
+                <div className='proyecto_enlaces'>
+                  <a target='blank' href='https://jimmyalexander.github.io/tienda/' >VER PROYECTO</a>
+                  <a target='blank' href='https://jimmyalexander.github.io/tienda/' >VER CODIGO</a>
+                </div>
+              </div>
+            </div>
 
             
             <div data-aos="fade-up" className='proyectos_item'>
