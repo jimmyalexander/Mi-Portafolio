@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import logo_rick from '../assets/static/RandM.png';
 import salon from '../assets/static/salon.jpeg';
 import countries from '../assets/static/countries.jpeg';
 
@@ -24,21 +23,7 @@ export const Proyectos = () => {
         <h2>PORTAFOLIO</h2>
           <div className='proyectos_container'>
 
-            <div data-aos="fade-up" className='proyectos_item'>
-              <img src={logo_rick} alt='rick' />
-              <div className='proyectos_item-info'>
-                <h3 className='proyecto_item-titulo'>RICK AND MORTY</h3>
-                <p>Es un sitio web donde podras ver todos los personajes 
-                  de la series de Rick and Morty y consultar algunos datos
-                  curiosos.
-                </p>
-                <div className='proyecto_enlaces'>
-                  <a target='blank' href='https://jimmyalexander.github.io/RickandMorty/' >VER PROYECTO</a>
-                  <a target='blank' href='https://github.com/jimmyalexander/RickandMorty' >VER CODIGO</a>
-                </div>
-
-              </div>
-            </div>
+            
             <div data-aos="fade-up" className='proyectos_item'>
               <img src={salon} alt='salon' />
               <div className='proyectos_item-info'>
@@ -52,6 +37,8 @@ export const Proyectos = () => {
                 </div>
               </div>
             </div>
+
+
             <div data-aos="fade-up" className='proyectos_item'>
               <img src={countries} alt='countries' />
               <div className='proyectos_item-info'>
