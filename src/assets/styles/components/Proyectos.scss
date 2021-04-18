@@ -4,7 +4,7 @@
   transition: all 1s ease;
   
   h2{
-    @include titlePrincipal;
+     @include titlePrincipal;
     }
   h3{
         color: $background-dark;
@@ -42,11 +42,9 @@
                 color: #999;
                }
                .proyecto_enlaces{
-                   //margin: 10%; 
-                   width: 100%;
+                   margin: 10%; 
                    display: flex;
-                   justify-content: center;
-                   flex-direction: row;
+                   flex-direction: column;
                    .icon-ancla{
                        background: purple;
                    }
