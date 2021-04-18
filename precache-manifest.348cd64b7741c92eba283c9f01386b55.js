@@ -1,35 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "911e1382219a93d202ca25e8dabd074f",
+    "revision": "97081e330a7a4a26ad5338a3a6d49807",
     "url": "/Mi-Portafolio/index.html"
   },
   {
-    "revision": "59732fce6b7fc4a8eb55",
+    "revision": "f6c0b79e57c5a5694284",
     "url": "/Mi-Portafolio/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "eab08b4d7947c4a91b15",
+    "revision": "3a0cde26dec046ab32d7",
     "url": "/Mi-Portafolio/static/css/main.4a1257fd.chunk.css"
   },
   {
-    "revision": "59732fce6b7fc4a8eb55",
-    "url": "/Mi-Portafolio/static/js/2.abd71a49.chunk.js"
+    "revision": "f6c0b79e57c5a5694284",
+    "url": "/Mi-Portafolio/static/js/2.6e0cbd4f.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Mi-Portafolio/static/js/2.abd71a49.chunk.js.LICENSE.txt"
+    "url": "/Mi-Portafolio/static/js/2.6e0cbd4f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eab08b4d7947c4a91b15",
-    "url": "/Mi-Portafolio/static/js/main.7f4a7d8a.chunk.js"
+    "revision": "3a0cde26dec046ab32d7",
+    "url": "/Mi-Portafolio/static/js/main.d0e92aaf.chunk.js"
   },
   {
     "revision": "be8af0fe762021293ca4",
     "url": "/Mi-Portafolio/static/js/runtime-main.f0c97b90.js"
-  },
-  {
-    "revision": "b59199e311f4a8e2f40e651ccd82dd41",
-    "url": "/Mi-Portafolio/static/media/RandM.b59199e3.png"
   },
   {
     "revision": "aee6cebf0172907fda9d76faba603405",
