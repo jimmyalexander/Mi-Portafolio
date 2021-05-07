@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "97081e330a7a4a26ad5338a3a6d49807",
+    "revision": "0c07a24ff4626445194e84a9c4788bce",
     "url": "/Mi-Portafolio/index.html"
   },
   {
-    "revision": "f6c0b79e57c5a5694284",
+    "revision": "59732fce6b7fc4a8eb55",
     "url": "/Mi-Portafolio/static/css/2.eb43dee1.chunk.css"
   },
   {
-    "revision": "3a0cde26dec046ab32d7",
+    "revision": "512fdcb553758fee1e33",
     "url": "/Mi-Portafolio/static/css/main.4a1257fd.chunk.css"
   },
   {
-    "revision": "f6c0b79e57c5a5694284",
-    "url": "/Mi-Portafolio/static/js/2.6e0cbd4f.chunk.js"
+    "revision": "59732fce6b7fc4a8eb55",
+    "url": "/Mi-Portafolio/static/js/2.abd71a49.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Mi-Portafolio/static/js/2.6e0cbd4f.chunk.js.LICENSE.txt"
+    "url": "/Mi-Portafolio/static/js/2.abd71a49.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3a0cde26dec046ab32d7",
-    "url": "/Mi-Portafolio/static/js/main.d0e92aaf.chunk.js"
+    "revision": "512fdcb553758fee1e33",
+    "url": "/Mi-Portafolio/static/js/main.731fe30a.chunk.js"
   },
   {
     "revision": "be8af0fe762021293ca4",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "aee6cebf0172907fda9d76faba603405",
     "url": "/Mi-Portafolio/static/media/countries.aee6cebf.jpeg"
+  },
+  {
+    "revision": "01f3cf6cae8da30b5eeb8310e93b4752",
+    "url": "/Mi-Portafolio/static/media/df.01f3cf6c.png"
   },
   {
     "revision": "83a6ec3adef6f7b28a8c5aaff5547f77",

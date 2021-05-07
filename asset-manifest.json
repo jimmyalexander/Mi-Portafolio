@@ -1,28 +1,29 @@
 {
   "files": {
     "main.css": "/Mi-Portafolio/static/css/main.4a1257fd.chunk.css",
-    "main.js": "/Mi-Portafolio/static/js/main.d0e92aaf.chunk.js",
-    "main.js.map": "/Mi-Portafolio/static/js/main.d0e92aaf.chunk.js.map",
+    "main.js": "/Mi-Portafolio/static/js/main.731fe30a.chunk.js",
+    "main.js.map": "/Mi-Portafolio/static/js/main.731fe30a.chunk.js.map",
     "runtime-main.js": "/Mi-Portafolio/static/js/runtime-main.f0c97b90.js",
     "runtime-main.js.map": "/Mi-Portafolio/static/js/runtime-main.f0c97b90.js.map",
     "static/css/2.eb43dee1.chunk.css": "/Mi-Portafolio/static/css/2.eb43dee1.chunk.css",
-    "static/js/2.6e0cbd4f.chunk.js": "/Mi-Portafolio/static/js/2.6e0cbd4f.chunk.js",
-    "static/js/2.6e0cbd4f.chunk.js.map": "/Mi-Portafolio/static/js/2.6e0cbd4f.chunk.js.map",
+    "static/js/2.abd71a49.chunk.js": "/Mi-Portafolio/static/js/2.abd71a49.chunk.js",
+    "static/js/2.abd71a49.chunk.js.map": "/Mi-Portafolio/static/js/2.abd71a49.chunk.js.map",
     "index.html": "/Mi-Portafolio/index.html",
-    "precache-manifest.348cd64b7741c92eba283c9f01386b55.js": "/Mi-Portafolio/precache-manifest.348cd64b7741c92eba283c9f01386b55.js",
+    "precache-manifest.142f0ef7a77d69d693b7a73a75e8a80e.js": "/Mi-Portafolio/precache-manifest.142f0ef7a77d69d693b7a73a75e8a80e.js",
     "service-worker.js": "/Mi-Portafolio/service-worker.js",
     "static/css/2.eb43dee1.chunk.css.map": "/Mi-Portafolio/static/css/2.eb43dee1.chunk.css.map",
     "static/css/main.4a1257fd.chunk.css.map": "/Mi-Portafolio/static/css/main.4a1257fd.chunk.css.map",
-    "static/js/2.6e0cbd4f.chunk.js.LICENSE.txt": "/Mi-Portafolio/static/js/2.6e0cbd4f.chunk.js.LICENSE.txt",
+    "static/js/2.abd71a49.chunk.js.LICENSE.txt": "/Mi-Portafolio/static/js/2.abd71a49.chunk.js.LICENSE.txt",
     "static/media/countries.jpeg": "/Mi-Portafolio/static/media/countries.aee6cebf.jpeg",
+    "static/media/df.png": "/Mi-Portafolio/static/media/df.01f3cf6c.png",
     "static/media/salon.jpeg": "/Mi-Portafolio/static/media/salon.83a6ec3a.jpeg",
     "static/media/video.mp4": "/Mi-Portafolio/static/media/video.4c0f7287.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.f0c97b90.js",
     "static/css/2.eb43dee1.chunk.css",
-    "static/js/2.6e0cbd4f.chunk.js",
+    "static/js/2.abd71a49.chunk.js",
     "static/css/main.4a1257fd.chunk.css",
-    "static/js/main.d0e92aaf.chunk.js"
+    "static/js/main.731fe30a.chunk.js"
   ]
 }
