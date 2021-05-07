@@ -22,7 +22,7 @@ export const Feedback = () => {
         <div className="feedback_info">
           <strong>"Jimmy Alexander es un trabajador comprometido y muy profesional. Sus skills como desarrollador 
                   Frontend le permiten resolver problemas de manera eficiente"</strong>
-          <p>Fredy Bustos / Frontend Enginner at Resuelve tu Deuda</p>
+          <p><a target='blank' href="https://www.linkedin.com/in/fredy-bustos/">Fredy Bustos</a>/ Frontend Enginner at Resuelve tu Deuda</p>
         </div>
       </div>
     </div>
